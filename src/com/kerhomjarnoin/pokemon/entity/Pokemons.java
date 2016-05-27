@@ -1,13 +1,6 @@
 package com.kerhomjarnoin.pokemon.entity;
 
-import org.joda.time.format.ISODateTimeFormat;
-import android.os.Parcel;
-import android.os.Parcelable;
-import java.util.List;
-import java.util.ArrayList;
-import java.io.Serializable;
 import org.joda.time.DateTime;
-
 import com.tactfactory.harmony.annotation.Column;
 import com.tactfactory.harmony.annotation.Column.Type;
 import com.tactfactory.harmony.annotation.Entity;
@@ -17,6 +10,7 @@ import com.tactfactory.harmony.annotation.Id;
 import com.tactfactory.harmony.annotation.OneToOne;
 
 @Entity
+@Rest
 public class Pokemons {
 	@Id
 	@Column(type = Type.INTEGER, hidden = true)

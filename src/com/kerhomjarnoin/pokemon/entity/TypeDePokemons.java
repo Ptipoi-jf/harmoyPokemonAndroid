@@ -1,10 +1,6 @@
 package com.kerhomjarnoin.pokemon.entity;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-import java.util.List;
 import java.util.ArrayList;
-import java.io.Serializable;
 import com.tactfactory.harmony.annotation.Column;
 import com.tactfactory.harmony.annotation.Entity;
 import com.tactfactory.harmony.annotation.GeneratedValue;
@@ -14,6 +10,7 @@ import com.tactfactory.harmony.annotation.Column.Type;
 import com.tactfactory.harmony.annotation.GeneratedValue.Strategy;
 
 @Entity
+@Rest
 public class TypeDePokemons {
 	@Id
 	@Column(type = Type.INTEGER, hidden = true)

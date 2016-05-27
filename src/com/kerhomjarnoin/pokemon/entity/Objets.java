@@ -9,6 +9,7 @@ import com.tactfactory.harmony.annotation.Entity;
 import com.tactfactory.harmony.annotation.GeneratedValue.Strategy;
 
 @Entity
+@Rest
 public class Objets {
 	@Id
 	@Column(type = Type.INTEGER, hidden = true)
