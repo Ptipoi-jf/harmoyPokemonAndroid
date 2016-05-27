@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/types_nom_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/types_nom_label"/>
+    <EditText
+        android:id="@+id/types_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/types_nom_label" />
+    <TextView
+        android:id="@+id/types_faiblecontre_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/types_nom"
+        android:text="@string/types_faiblecontre_label"/>
+    <com.kerhomjarnoin.pokemon.harmony.widget.MultiEntityWidget
+        android:id="@+id/types_faiblecontre_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/types_faiblecontre_label" />
+    <TextView
+        android:id="@+id/types_fortcontre_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/types_faiblecontre_button"
+        android:text="@string/types_fortcontre_label"/>
+    <com.kerhomjarnoin.pokemon.harmony.widget.MultiEntityWidget
+        android:id="@+id/types_fortcontre_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/types_fortcontre_label" />
+</RelativeLayout>

@@ -1,5 +1,11 @@
 package com.kerhomjarnoin.pokemon.entity;
 
+import android.os.Parcel;
+import com.tactfactory.harmony.bundles.rest.annotation.Rest;
+import android.os.Parcelable;
+import java.util.List;
+import java.util.ArrayList;
+import java.io.Serializable;
 import com.tactfactory.harmony.annotation.Column;
 import com.tactfactory.harmony.annotation.Entity;
 import com.tactfactory.harmony.annotation.GeneratedValue;
@@ -9,7 +15,11 @@ import com.tactfactory.harmony.annotation.GeneratedValue.Strategy;
 
 @Entity
 @Rest
-public class Positions {
+public class Positions  implements Serializable , Parcelable {
+
+    /** Parent parcelable for parcellisation purposes. */
+    protected List<Parcelable> parcelableParents;
+
 	@Id
 	@Column(type = Type.INTEGER, hidden = true)
     @GeneratedValue(strategy = Strategy.MODE_IDENTITY)
@@ -20,4 +30,143 @@ public class Positions {
 	
 	@Column(type = Type.INTEGER)
 	private int y;
+
+    /**
+     * Default constructor.
+     */
+    public Positions() {
+
+    }
+
+     /**
+     * Get the Id.
+     * @return the id
+     */
+    public int getId() {
+         return this.id;
+    }
+     /**
+     * Set the Id.
+     * @param value the id to set
+     */
+    public void setId(final int value) {
+         this.id = value;
+    }
+     /**
+     * Get the X.
+     * @return the x
+     */
+    public int getX() {
+         return this.x;
+    }
+     /**
+     * Set the X.
+     * @param value the x to set
+     */
+    public void setX(final int value) {
+         this.x = value;
+    }
+     /**
+     * Get the Y.
+     * @return the y
+     */
+    public int getY() {
+         return this.y;
+    }
+     /**
+     * Set the Y.
+     * @param value the y to set
+     */
+    public void setY(final int value) {
+         this.y = value;
+    }
+    /**
+     * This stub of code is regenerated. DO NOT MODIFY.
+     * 
+     * @param dest Destination parcel
+     * @param flags flags
+     */
+    public void writeToParcelRegen(Parcel dest, int flags) {
+        if (this.parcelableParents == null) {
+            this.parcelableParents = new ArrayList<Parcelable>();
+        }
+        if (!this.parcelableParents.contains(this)) {
+            this.parcelableParents.add(this);
+        }
+        dest.writeInt(this.getId());
+        dest.writeInt(this.getX());
+        dest.writeInt(this.getY());
+    }
+
+    /**
+     * Regenerated Parcel Constructor. 
+     *
+     * This stub of code is regenerated. DO NOT MODIFY THIS METHOD.
+     *
+     * @param parc The parcel to read from
+     */
+    public void readFromParcel(Parcel parc) {
+        this.setId(parc.readInt());
+        this.setX(parc.readInt());
+        this.setY(parc.readInt());
+    }
+
+    /**
+     * Parcel Constructor.
+     *
+     * @param parc The parcel to read from
+     */
+    public Positions(Parcel parc) {
+        // You can chose not to use harmony's generated parcel.
+        // To do this, remove this line.
+        this.readFromParcel(parc);
+
+        // You can  implement your own parcel mechanics here.
+
+    }
+
+    /* This method is not regenerated. You can implement your own parcel mechanics here. */
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        // You can chose not to use harmony's generated parcel.
+        // To do this, remove this line.
+        this.writeToParcelRegen(dest, flags);
+        // You can  implement your own parcel mechanics here.
+    }
+
+    /**
+     * Use this method to write this entity to a parcel from another entity.
+     * (Useful for relations)
+     *
+     * @param parent The entity being parcelled that need to parcel this one
+     * @param dest The destination parcel
+     * @param flags The flags
+     */
+    public synchronized void writeToParcel(List<Parcelable> parents, Parcel dest, int flags) {
+        this.parcelableParents = new ArrayList<Parcelable>(parents);
+        dest.writeParcelable(this, flags);
+        this.parcelableParents = null;
+    }
+
+    @Override
+    public int describeContents() {
+        // This should return 0 
+        // or CONTENTS_FILE_DESCRIPTOR if your entity is a FileDescriptor.
+        return 0;
+    }
+
+    /**
+     * Parcelable creator.
+     */
+    public static final Parcelable.Creator<Positions> CREATOR
+        = new Parcelable.Creator<Positions>() {
+        public Positions createFromParcel(Parcel in) {
+            return new Positions(in);
+        }
+        
+        public Positions[] newArray(int size) {
+            return new Positions[size];
+        }
+    };
+
 }

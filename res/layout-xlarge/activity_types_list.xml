@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:baselineAligned="false"
+    tools:ignore="InconsistentLayout" >
+
+    <include layout="@layout/toolbar" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/fragment_list"
+            android:name="com.kerhomjarnoin.pokemon.view.types.TypesListFragment"
+            android:layout_width="0dp"
+            android:layout_weight="33"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_types_list" >
+        </fragment>
+        
+        <fragment
+            android:id="@+id/fragment_show"
+            android:name="com.kerhomjarnoin.pokemon.view.types.TypesShowFragment"
+            android:layout_width="0dp"
+            android:layout_weight="67"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_types_show" />
+        
+    </LinearLayout>
+</LinearLayout>

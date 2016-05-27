@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <TextView
+        android:id="@+id/npc_nom_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/npc_nom_label"/>
+    <EditText
+        android:id="@+id/npc_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/npc_nom_label" />
+   <TextView
+        android:id="@+id/npc_profession_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/npc_nom"
+        android:text="@string/npc_profession_label"/>
+    <EditText
+        android:id="@+id/npc_profession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/npc_profession_label" />
+   <TextView
+        android:id="@+id/npc_texte_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/npc_profession"
+        android:text="@string/npc_texte_label"/>
+    <EditText
+        android:id="@+id/npc_texte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/npc_texte_label" />
+    <TextView
+        android:id="@+id/npc_objets_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/npc_texte"
+        android:text="@string/npc_objets_label"/>
+    <com.kerhomjarnoin.pokemon.harmony.widget.MultiEntityWidget
+        android:id="@+id/npc_objets_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/npc_objets_label" />
+    <TextView
+        android:id="@+id/npc_pokemons_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/npc_objets_button"
+        android:text="@string/npc_pokemons_label"/>
+    <com.kerhomjarnoin.pokemon.harmony.widget.MultiEntityWidget
+        android:id="@+id/npc_pokemons_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/npc_pokemons_label" />
+    <TextView
+        android:id="@+id/npc_badges_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/npc_pokemons_button"
+        android:text="@string/npc_badges_label"/>
+    <com.kerhomjarnoin.pokemon.harmony.widget.MultiEntityWidget
+        android:id="@+id/npc_badges_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/npc_badges_label" />
+    <TextView
+        android:id="@+id/npc_position_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/npc_badges_button"
+        android:text="@string/npc_position_label"/>
+    <com.kerhomjarnoin.pokemon.harmony.widget.SingleEntityWidget
+        android:id="@+id/npc_position_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/npc_position_label" />
+</RelativeLayout>

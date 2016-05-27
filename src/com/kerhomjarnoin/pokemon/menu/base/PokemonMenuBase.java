@@ -17,6 +17,10 @@ import android.util.SparseArray;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.kerhomjarnoin.pokemon.menu.CrudCreateMenuWrapper;
+import com.kerhomjarnoin.pokemon.menu.CrudDeleteMenuWrapper;
+import com.kerhomjarnoin.pokemon.menu.CrudEditMenuWrapper;
+import com.kerhomjarnoin.pokemon.menu.SaveMenuWrapper;
 
 /**
  * PokemonMenuBase.
@@ -25,6 +29,14 @@ import android.view.MenuItem;
  * please see PokemonMenu.
  */
 public abstract class PokemonMenuBase {
+    /** Crudcreate value. */
+    public static final int CRUDCREATE = 0x1;
+    /** Cruddelete value. */
+    public static final int CRUDDELETE = 0x2;
+    /** Crudedit value. */
+    public static final int CRUDEDIT = 0x3;
+    /** Save value. */
+    public static final int SAVE = 0x4;
 
     /** Array of MenuWrapperBase. */
     protected SparseArray<MenuWrapperBase> menus =
@@ -61,6 +73,10 @@ public abstract class PokemonMenuBase {
 
         this.fragment    = fragment;
         this.ctx     = ctx;
+        this.menus.put(CRUDCREATE, new CrudCreateMenuWrapper());
+        this.menus.put(CRUDDELETE, new CrudDeleteMenuWrapper());
+        this.menus.put(CRUDEDIT, new CrudEditMenuWrapper());
+        this.menus.put(SAVE, new SaveMenuWrapper());
 
     }
 

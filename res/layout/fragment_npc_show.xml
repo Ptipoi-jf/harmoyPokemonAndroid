@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:id="@+id/npc_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" >
+            <TextView
+                android:id="@+id/npc_nom_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/npc_nom_label"/>
+            <TextView
+                android:id="@+id/npc_nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/npc_nom_label" />
+            <TextView
+                android:id="@+id/npc_profession_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/npc_nom"
+                android:text="@string/npc_profession_label"/>
+            <TextView
+                android:id="@+id/npc_profession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/npc_profession_label" />
+            <TextView
+                android:id="@+id/npc_texte_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/npc_profession"
+                android:text="@string/npc_texte_label"/>
+            <TextView
+                android:id="@+id/npc_texte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/npc_texte_label" />
+            <TextView
+                android:id="@+id/npc_objets_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/npc_texte"
+                android:text="@string/npc_objets_label"/>
+            <TextView
+                android:id="@+id/npc_objets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/npc_objets_label" />
+            <TextView
+                android:id="@+id/npc_pokemons_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/npc_objets"
+                android:text="@string/npc_pokemons_label"/>
+            <TextView
+                android:id="@+id/npc_pokemons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/npc_pokemons_label" />
+            <TextView
+                android:id="@+id/npc_badges_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/npc_pokemons"
+                android:text="@string/npc_badges_label"/>
+            <TextView
+                android:id="@+id/npc_badges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/npc_badges_label" />
+            <TextView
+                android:id="@+id/npc_position_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/npc_badges"
+                android:text="@string/npc_position_label"/>
+            <TextView
+                android:id="@+id/npc_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/npc_position_label" />
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/npc_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/npc_not_found" />
+</RelativeLayout>

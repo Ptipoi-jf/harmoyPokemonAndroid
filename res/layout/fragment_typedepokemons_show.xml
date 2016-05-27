@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:id="@+id/typedepokemons_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" >
+            <TextView
+                android:id="@+id/typedepokemons_nom_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/typedepokemons_nom_label"/>
+            <TextView
+                android:id="@+id/typedepokemons_nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/typedepokemons_nom_label" />
+            <TextView
+                android:id="@+id/typedepokemons_attaque_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/typedepokemons_nom"
+                android:text="@string/typedepokemons_attaque_label"/>
+            <TextView
+                android:id="@+id/typedepokemons_attaque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/typedepokemons_attaque_label" />
+            <TextView
+                android:id="@+id/typedepokemons_attaque_spe_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/typedepokemons_attaque"
+                android:text="@string/typedepokemons_attaque_spe_label"/>
+            <TextView
+                android:id="@+id/typedepokemons_attaque_spe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/typedepokemons_attaque_spe_label" />
+            <TextView
+                android:id="@+id/typedepokemons_defence_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/typedepokemons_attaque_spe"
+                android:text="@string/typedepokemons_defence_label"/>
+            <TextView
+                android:id="@+id/typedepokemons_defence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/typedepokemons_defence_label" />
+            <TextView
+                android:id="@+id/typedepokemons_defence_spe_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/typedepokemons_defence"
+                android:text="@string/typedepokemons_defence_spe_label"/>
+            <TextView
+                android:id="@+id/typedepokemons_defence_spe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/typedepokemons_defence_spe_label" />
+            <TextView
+                android:id="@+id/typedepokemons_vitesse_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/typedepokemons_defence_spe"
+                android:text="@string/typedepokemons_vitesse_label"/>
+            <TextView
+                android:id="@+id/typedepokemons_vitesse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/typedepokemons_vitesse_label" />
+            <TextView
+                android:id="@+id/typedepokemons_pv_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/typedepokemons_vitesse"
+                android:text="@string/typedepokemons_pv_label"/>
+            <TextView
+                android:id="@+id/typedepokemons_pv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/typedepokemons_pv_label" />
+            <TextView
+                android:id="@+id/typedepokemons_types_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/typedepokemons_pv"
+                android:text="@string/typedepokemons_types_label"/>
+            <TextView
+                android:id="@+id/typedepokemons_types"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/typedepokemons_types_label" />
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/typedepokemons_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/typedepokemons_not_found" />
+</RelativeLayout>

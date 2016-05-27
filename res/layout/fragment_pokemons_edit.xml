@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <TextView
+        android:id="@+id/pokemons_surnom_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pokemons_surnom_label"/>
+    <EditText
+        android:id="@+id/pokemons_surnom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/pokemons_surnom_label" />
+   <TextView
+        android:id="@+id/pokemons_niveau_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokemons_surnom"
+        android:text="@string/pokemons_niveau_label"/>
+    <EditText
+        android:id="@+id/pokemons_niveau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/pokemons_niveau_label" />
+   <TextView
+        android:id="@+id/pokemons_capture_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokemons_niveau"
+        android:text="@string/pokemons_capture_label"/>
+    <com.kerhomjarnoin.pokemon.harmony.widget.DateTimeWidget
+        android:id="@+id/pokemons_capture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokemons_capture_label"
+        harmony:dateTimeWidget_dateDialogTitle="@string/pokemons_capture_date_title"
+        harmony:dateTimeWidget_timeDialogTitle="@string/pokemons_capture_time_title" />
+    <TextView
+        android:id="@+id/pokemons_typepokemon_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokemons_capture"
+        android:text="@string/pokemons_typepokemon_label"/>
+    <com.kerhomjarnoin.pokemon.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokemons_typepokemon_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokemons_typepokemon_label" />
+    <TextView
+        android:id="@+id/pokemons_attaque1_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokemons_typepokemon_button"
+        android:text="@string/pokemons_attaque1_label"/>
+    <com.kerhomjarnoin.pokemon.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokemons_attaque1_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokemons_attaque1_label" />
+    <TextView
+        android:id="@+id/pokemons_attaque2_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokemons_attaque1_button"
+        android:text="@string/pokemons_attaque2_label"/>
+    <com.kerhomjarnoin.pokemon.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokemons_attaque2_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokemons_attaque2_label" />
+    <TextView
+        android:id="@+id/pokemons_attaque3_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokemons_attaque2_button"
+        android:text="@string/pokemons_attaque3_label"/>
+    <com.kerhomjarnoin.pokemon.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokemons_attaque3_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokemons_attaque3_label" />
+    <TextView
+        android:id="@+id/pokemons_attaque4_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokemons_attaque3_button"
+        android:text="@string/pokemons_attaque4_label"/>
+    <com.kerhomjarnoin.pokemon.harmony.widget.SingleEntityWidget
+        android:id="@+id/pokemons_attaque4_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokemons_attaque4_label" />
+</RelativeLayout>

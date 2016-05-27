@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="2.5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="2.5dp"
+    android:background="@drawable/list_item_activated_background" >
+        <TextView
+            android:id="@+id/row_pokemons_surnom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:id="@+id/row_pokemons_niveau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_pokemons_surnom" />
+        <TextView
+            android:id="@+id/row_pokemons_capture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_pokemons_niveau" />
+        <TextView
+            android:id="@+id/row_pokemons_typepokemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_pokemons_capture" />
+        <TextView
+            android:id="@+id/row_pokemons_attaque1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_pokemons_typepokemon" />
+        <TextView
+            android:id="@+id/row_pokemons_attaque2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_pokemons_attaque1" />
+        <TextView
+            android:id="@+id/row_pokemons_attaque3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_pokemons_attaque2" />
+        <TextView
+            android:id="@+id/row_pokemons_attaque4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_pokemons_attaque3" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:id="@+id/attaques_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" >
+            <TextView
+                android:id="@+id/attaques_nom_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/attaques_nom_label"/>
+            <TextView
+                android:id="@+id/attaques_nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/attaques_nom_label" />
+            <TextView
+                android:id="@+id/attaques_puissance_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/attaques_nom"
+                android:text="@string/attaques_puissance_label"/>
+            <TextView
+                android:id="@+id/attaques_puissance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/attaques_puissance_label" />
+            <TextView
+                android:id="@+id/attaques_precis_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/attaques_puissance"
+                android:text="@string/attaques_precis_label"/>
+            <TextView
+                android:id="@+id/attaques_precis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/attaques_precis_label" />
+            <TextView
+                android:id="@+id/attaques_type_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/attaques_precis"
+                android:text="@string/attaques_type_label"/>
+            <TextView
+                android:id="@+id/attaques_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:layout_below="@+id/attaques_type_label" />
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/attaques_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/attaques_not_found" />
+</RelativeLayout>

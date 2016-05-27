@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <TextView
+        android:id="@+id/arenes_nom_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/arenes_nom_label"/>
+    <EditText
+        android:id="@+id/arenes_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/arenes_nom_label" />
+    <TextView
+        android:id="@+id/arenes_position_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arenes_nom"
+        android:text="@string/arenes_position_label"/>
+    <com.kerhomjarnoin.pokemon.harmony.widget.SingleEntityWidget
+        android:id="@+id/arenes_position_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arenes_position_label" />
+    <TextView
+        android:id="@+id/arenes_badge_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arenes_position_button"
+        android:text="@string/arenes_badge_label"/>
+    <com.kerhomjarnoin.pokemon.harmony.widget.SingleEntityWidget
+        android:id="@+id/arenes_badge_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arenes_badge_label" />
+</RelativeLayout>

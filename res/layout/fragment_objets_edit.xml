@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:harmony="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   <TextView
+        android:id="@+id/objets_nom_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/objets_nom_label"/>
+    <EditText
+        android:id="@+id/objets_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/objets_nom_label" />
+   <TextView
+        android:id="@+id/objets_quantite_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/objets_nom"
+        android:text="@string/objets_quantite_label"/>
+    <EditText
+        android:id="@+id/objets_quantite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/objets_quantite_label" />
+    <TextView
+        android:id="@+id/objets_type_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/objets_quantite"
+        android:text="@string/objets_type_label"/>
+    <com.kerhomjarnoin.pokemon.harmony.widget.SingleEntityWidget
+        android:id="@+id/objets_type_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/objets_type_label" />
+</RelativeLayout>
