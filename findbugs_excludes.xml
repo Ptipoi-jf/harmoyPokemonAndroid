@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+  <Match>
+    <Class name="~.*\.R\$.*"/>
+  </Match>
+  <Match>
+    <Or>
+    <Package name="~com[.]kerhomjarnoin[.]pokemon[.]criterias[.]base([.].*)?" />
+    <Package name="~com[.]kerhomjarnoin[.]pokemon[.]data[.]base([.].*)?" />
+    <Package name="~com[.]kerhomjarnoin[.]pokemon[.]harmony([.].*)?" />
+    <Package name="~com[.]kerhomjarnoin[.]pokemon[.]provider[.]base([.].*)?" />
+    <Package name="~com[.]kerhomjarnoin[.]pokemon[.]provider[.]utils[.]base([.].*)?" />
+    <Class name="~com[.]kerhomjarnoin[.]pokemon[.]PokemonApplicationBase.java"/>
+    </Or>
+  </Match>
+</FindBugsFilter>
